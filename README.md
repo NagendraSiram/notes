@@ -1,3 +1,93 @@
+# Java Commands
+
+To run a main program that is bundled in a jar file
+
+> %JAVA_HOME%\bin\java –jar application.jar
+
+To run a main program that is bundled in a jar file which has other dependency jars present in dependency directory
+
+> %JAVA_HOME%\bin\java -cp application.jar;./dependency/* com.company.apps.MainApplication
+
+> %JAVA_HOME%\bin\java –cp ".;application.jar;config.properties;" com.company.apps.MainApplication
+
+> %JAVA_HOME%\bin\java -cp ".;mysql-connector-java-5.0.8-bin.jar" TestDriver
+
+_Note: For Unix use : instead of ; _
+
+**DEBUG**
+
+> java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -jar application.jar
+
+# Git Commands
+
+**Migrating Git**
+> git clone —bare ssh://something.com/com/home/project.git
+
+> git push —mirror https://github.com/project.git
+
+**Amend the message**
+```
+git commit --amend -m "new message"
+```
+**Amend the files**
+```
+git commit --amend
+```
+**Logs**
+```
+gl
+git log --stat
+git reflog
+```
+
+**Remove untracked directories and files**
+```
+git clean -df
+```
+**To revert all local changes in case you haven’t actually committed** 
+```
+git reset --hard HEAD 
+```
+
+**Undoing bad commits (when you haven't pushed any changes to repo)**
+```
+git reset --soft number (previous committed files will be in staging area)
+git reset number (previous committed files will be in un-tracked section) 
+git reset --hard number (previous committed files are completely removed)
+```
+**Revert bad commits  (which other users already pulled committed changes)**  
+```
+ git revert number (reverts only the commit number specified) 
+```
+**Cherry pick commits from other branch**
+```
+git cherrypick number
+```
+**Tag a release**
+```
+git tag -a release-xx -m 'for version xx'
+
+git push origin --tags
+
+git tag -a release-xx 640bf0 -m 'for version xx' (Tag older commit)
+
+git tag -d release-xx (delete a tag)
+```
+**Git Stash Commands**
+ ```
+git stash list [<options>]
+git stash show [<stash>]
+git stash drop [-q|--quiet] [<stash>]
+git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+git stash branch <branchname> [<stash>]
+git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+         [-u|--include-untracked] [-a|--all] [<message>]]
+git stash clear
+git stash create [<message>]
+git stash store [-m|--message <message>] [-q|--quiet] <commit>  
+```
+
+
 # Docker Commands
 ```bash
 docker ps
