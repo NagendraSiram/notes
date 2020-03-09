@@ -1,3 +1,17 @@
+# Tools
+
+##### Java Memory Analysis
+
+- Eclipse Memory Analyzer - Heap Dumps (.hprof)
+- JVisual VM
+- GC Viewer
+- IBM
+
+##### Intellj Pluggins
+- Plant Uml
+- Sonarlint
+
+
 # Java Commands
 
 To run a main program that is bundled in a jar file
