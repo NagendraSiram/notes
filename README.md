@@ -7,6 +7,12 @@
 - GC Viewer
 - IBM
 
+##### Load Test tools
+
+- JMeter
+- Gatling
+- https://www.joedog.org/siege-manual/
+
 ##### Intellj Pluggins
 - Plant Uml
 - Sonarlint
