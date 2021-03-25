@@ -17,6 +17,20 @@
 - Plant Uml
 - Sonarlint
 
+##### Angular
+- Augury plugin for chrome
+
+##### ReactJs
+- node.js
+- YARN (package manager)
+- Babel/Webpack
+- Express (sever side)
+- PM2 - auto deploy when saved
+- ejs - view engine
+- JEST (testing)
+- https://jscomplete.com/repl
+- editors - sublime, atom
+- plugin - eslint - compile time errors in editors
 
 # Java Commands
 
